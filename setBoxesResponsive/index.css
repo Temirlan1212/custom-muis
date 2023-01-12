@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.box {
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+.div1 {
+  background-color: black;
+}
+.div2 {
+  background-color: rgb(167, 40, 40);
+}
+.div3 {
+  background-color: rgb(26, 34, 146);
+}
+.div4 {
+  background-color: rgb(1, 182, 97);
+}
+.div5 {
+  background-color: rgb(96, 20, 131);
+}
+.div6 {
+  background-color: rgb(204, 129, 16);
+}
