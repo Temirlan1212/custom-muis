@@ -3,6 +3,12 @@ const arrowIcons = document.querySelectorAll(".icon i");
 const allTabs = document.querySelectorAll(".tab");
 
 let isDragging = false;
+const enableArrows = () => {
+  console.log(tabsBox.clientWidth);
+  arrowIcons[0].parentElement.style.display = tabsBox.clientWidth >= 550 ? "flex" : "none";
+  arrowIcons[1].parentElement.style.display = tabsBox.clientWidth >= 550 ? "flex" : "none";
+};
+enableArrows();
 
 const handleIcons = () => {
   let scrollVal = Math.round(tabsBox.scrollLeft);
@@ -13,7 +19,7 @@ const handleIcons = () => {
 
 arrowIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    tabsBox.scrollLeft += icon.id === "left" ? -250 : 250;
+    tabsBox.scrollLeft += icon.id === "left" ? -350 : 350;
     setTimeout(() => handleIcons(), 50);
   });
 });

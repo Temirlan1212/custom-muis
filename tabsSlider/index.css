@@ -49,8 +49,8 @@ body {
   text-align: center;
   line-height: 55px;
   border-radius: 50%;
-  font-size: 1.2rem;
-  /* background-color: #d8d5f2; */
+  font-size: 1.7rem;
+  color: #696969;
   cursor: pointer;
 }
 .icon i:hover {
