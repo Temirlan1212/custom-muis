@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+}
+.wrapper {
+  width: 300px;
+  margin: 130px auto 0;
+}
+.select-btn,
+.options li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.select-btn {
+  height: 65px;
+  padding: 0 20px;
+  border-radius: 7px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.select-btn i {
+  font-size: 28px;
+  transition: transform 0.3s linear;
+}
+.wrapper.active .select-btn i {
+  transform: rotate(-180deg);
+}
+.content {
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  margin: 15px 0 0 0;
+}
+.wrapper.active .content {
+  display: block;
+}
+.content .search {
+  position: relative;
+}
+.search i {
+  left: 15px;
+  line-height: 53px;
+  position: absolute;
+}
+.search input {
+  height: 53px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  padding: 0 0 0 40px;
+  border-radius: 5px;
+  border: 1px solid #b3b3b3;
+}
+
+.options {
+  margin: 10px 0 0 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+.options::-webkit-scrollbar {
+  width: 7px;
+}
+
+.options::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 25px;
+}
+
+.options li {
+  height: 50px;
+  padding: 0 13px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.options li:hover {
+  background-color: #f2f2f2;
+}
